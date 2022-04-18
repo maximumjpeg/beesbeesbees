@@ -10,7 +10,7 @@ ForagerBee.prototype = Object.create(HoneyMakerBee.prototype);
 
 ForagerBee.prototype.constructor = ForagerBee;
 
-ForagerBee.prototype.eat = Grub.prototype.eat;
+//ForagerBee.prototype.treasureChest = [];
 
 ForagerBee.prototype.forage = function(treasure) {
   this.treasureChest.push(treasure);

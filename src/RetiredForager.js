@@ -1,5 +1,5 @@
 var RetiredForagerBee = function() {
-  HoneyMakerBee.call(this);
+  ForagerBee.call(this); // ForagerBee,
   this.age = 40;
   this.job = 'gamble';
   this.canFly = false;
@@ -15,4 +15,7 @@ RetiredForagerBee.prototype.forage = function() {
   return 'I am too old, let me play cards instead';
 };
 
-// RetiredForagerBee.prototype.treasureChest = ForagerBee.prototype.treasureChest;
+
+RetiredForagerBee.prototype.gamble = function() {
+  this.treasureChest.push('poker winnings');
+};
